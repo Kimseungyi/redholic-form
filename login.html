@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>login</title>
+  <style>
+    #loginBox {
+      height: 100vh;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .loginTitle {}
+    .loginTitle h2 {font-size: 24px;}
+    .loginTitle p { color: #9b9a9a; font-size: 14px; margin-top: -15px;}
+
+    .loginPage { 
+      display: flex;
+      flex-direction: column;
+    }
+    .loginPage input {
+      width: 360px;
+      height: 20px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .loginPage input:focus {
+      outline: none;
+    }
+    .loginPage .check {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .loginPage input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+    }
+    .loginPage label[for="checked"] {
+      font-size: 13px;
+      padding: 3px 0 0 4px;
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: row;
+      align-items: space-between;
+    }
+
+    .loginBtn {
+      width: 100%;
+      height: 35px;
+      border: none;
+      background-color: #363636;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .naverBtn {
+      width: 50%;
+      height: 35px;
+      
+    }
+    .kakaoBtn {
+      width: 50%;
+      height: 35px;
+    }
+
+    .loginInfo {
+      border-top: 1px solid #eee;
+      margin-top: 30px;
+      width: 390px;
+    }
+
+    ul {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      justify-content: center ;
+    }
+    ul li {
+      position: relative;
+      padding: 10px;
+    }
+    ul li:not(:last-child)::after {
+      display: block;
+      content: "";
+      width: 1px;
+      height: 10px;
+      background-color: #eee;
+      position: absolute;
+      top: 14px;
+      right: 0;
+    }
+    ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #000;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="loginBox">
+
+    <div class="loginTitle">
+      <h2>LOGIN</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+    </div>
+
+    <div class="loginPage">
+
+      <label for="id"></label>
+      <input id="id" type="text" placeholder="아이디를 입력하세요.">
+      <label for="password"></label>
+      <input id="password" type="text" placeholder="비밀번호를 입력해주세요.">
+
+      <div class="check">
+        <input id="checked" class="checked" type="checkbox">
+        <label for="checked">비회원</label>
+      </div>
+      
+      <button class="loginBtn">로그인</button>
+      <div class="btn">
+        <button class="naverBtn">네이버</button>
+        <button class="kakaoBtn">카카오톡</button>
+      </div>
+      
+    </div>
+
+    <div class="loginInfo">
+      <ul>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">아이디 찾기</a></li>
+        <li><a href="#">비밀번호 찾기</a></li>
+      </ul>
+    </div>
+    
+  </div>
+
+</body>
+</html>
